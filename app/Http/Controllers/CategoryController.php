@@ -10,22 +10,25 @@ class CategoryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
+    //phương thức GET
+    public function index( )
+    {   
+       
     }
 
     /**
      * Show the form for creating a new resource.
      */
+    //phương thức GET
     public function create()
     {
-        //
+        echo 'thêm mới';
     }
 
     /**
      * Store a newly created resource in storage.
      */
+    //phương thức POST
     public function store(Request $request)
     {
         //
@@ -34,17 +37,19 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
+    //phương thức GET
     public function show(string $id)
     {
-        //
+       
     }
 
     /**
      * Show the form for editing the specified resource.
      */
+    //phương thức GET
     public function edit(string $id)
     {
-        //
+       
     }
 
     /**
@@ -52,7 +57,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return 'Sửa chuyên mục:'.$id;
     }
 
     /**
@@ -60,6 +65,6 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        
     }
 }
